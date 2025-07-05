@@ -1,6 +1,11 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Sergio Sanchez'
+
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+googleAnalytics = ""
+enableRobotsTXT = true
 
 [module]
 [[module.imports]]
@@ -8,3 +13,14 @@ disable = false
 ignoreConfig = false
 ignoreImports = false
 path = 'github.com/theNewDynamic/gohugo-theme-ananke/v2'
+
+[languages]
+[languages.en]
+title = "Sergio Sanchez - Ingles"
+weight = 1
+contentDir = "content/en"
+# languageDirection = 'rtl' for Right-To-Left languages
+[languages.es]
+title = "Sergio Sanchez - Español"
+weight = 2
+contentDir = "content/es"
